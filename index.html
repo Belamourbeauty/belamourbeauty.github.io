@@ -96,6 +96,10 @@ nav a:hover::after { width: 100%; }
 .facts a:hover { color: var(--gold-light); }
 .facts b { display: block; font-weight: 400; font-size: .62rem; letter-spacing: .34em; text-transform: uppercase; color: var(--gold-light); margin-bottom: .25rem; }
 
+.demo-note { display: flex; gap: .9rem; align-items: baseline; max-width: 640px; margin: 2.4rem auto 0; padding: .8rem 1.1rem; text-align: left; font-size: .8rem; line-height: 1.55; color: rgba(255,255,255,.85); background: rgba(20,16,13,.55); border: 1px solid rgba(232,211,160,.45); backdrop-filter: blur(6px); }
+.demo-note b { flex: none; font-weight: 500; font-size: .62rem; letter-spacing: .3em; text-transform: uppercase; color: var(--gold-light); }
+@media (max-width: 640px) { .demo-note { flex-direction: column; gap: .3rem; margin-top: 1.6rem; font-size: .74rem; } .demo-note { display: flex; } }
+
 /* marquee */
 .marquee { background: var(--gold-grad); color: var(--espresso); overflow: hidden; white-space: nowrap; padding: .95rem 0; }
 .marquee .track { display: inline-flex; animation: slide 38s linear infinite; }
@@ -288,6 +292,7 @@ footer { text-align: center; padding: 2.6rem 20px; font-size: .72rem; letter-spa
       <a class="btn solid" href="#rezervacija" data-sl="Rezerviraj termin" data-en="Book now">Rezerviraj termin</a>
       <a class="btn" href="#cenik" data-sl="Poglej cenik" data-en="View prices">Poglej cenik</a>
     </div>
+        <div class="demo-note" role="note"><b data-sl="Opozorilo" data-en="Notice">Opozorilo</b><span data-sl="To je samo preizkusna različica spletne strani in ni uradna stran salona Belamour Beauty Studio. Uporablja se le za predstavitev in ne bo uporabljena za nobeno škodo. Fotografije in videi so z javnega Instagram profila salona." data-en="This is only a trial version of a website and not the official site of Belamour Beauty Studio. It is used for presentation only and will not be used to cause any harm. Photos and videos come from the studio's public Instagram profile.">To je samo preizkusna različica spletne strani in ni uradna stran salona Belamour Beauty Studio. Uporablja se le za predstavitev in ne bo uporabljena za nobeno škodo. Fotografije in videi so z javnega Instagram profila salona.</span></div>
     <div class="facts">
       <a href="#cenik"><b data-sl="Cenik" data-en="Prices">Cenik</b> <span data-sl="Hydrafacial od 60 €" data-en="Hydrafacial from 60 €">Hydrafacial od 60 €</span></a>
       <a href="#ekipa"><b data-sl="Ekipa" data-en="Team">Ekipa</b> <span>Doris · Maja · Tjaša</span></a>
