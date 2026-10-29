@@ -276,8 +276,8 @@ footer { text-align: center; padding: 2.6rem 20px; font-size: .72rem; letter-spa
 
 <div class="hero">
   <div class="slides" id="slides">
-    <video class="on" autoplay muted playsinline preload="auto" src="assets/video/hero-brows.mp4"></video>
-    <video muted playsinline preload="auto" src="assets/video/Dewf-m1IcqI.mp4"></video>
+    <video class="on" autoplay muted playsinline preload="auto" src="assets/video/Dewf-m1IcqI.mp4"></video>
+    <video muted playsinline preload="auto" src="assets/video/DerR7q5t47M.mp4"></video>
     <video muted playsinline preload="auto" src="assets/video/DY4-K2TNl5L.mp4"></video>
   </div>
   <div class="inner">
@@ -518,7 +518,7 @@ const show = n => {
 const schedule = () => {
   clearTimeout(timer);
   const v = slides[cur];
-  const ms = Math.min(9, isFinite(v.duration) && v.duration > 0 ? v.duration : 7) * 1000;
+  const ms = Math.min(7, isFinite(v.duration) && v.duration > 0 ? v.duration : 7) * 1000;
   timer = setTimeout(() => show((cur + 1) % slides.length), Math.max(ms - 600, 3000));
 };
 slides[0].play().catch(() => {}); schedule();
